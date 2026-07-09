@@ -28,17 +28,17 @@ class BottomNavBar extends StatelessWidget {
       selectedItemColor: primary,
       currentIndex: currentIndex,
       // list of navigation bar items
-      items: const [
+      items: [
         BottomNavigationBarItem(
-          icon: Icon(FontAwesomeIcons.basketShopping),
+          icon: Icon(FontAwesomeIcons.basketShopping.data),
           label: 'My Lists',
         ),
         BottomNavigationBarItem(
-          icon: Icon(FontAwesomeIcons.listUl),
+          icon: Icon(FontAwesomeIcons.listUl.data),
           label: 'My Recipes',
         ),
         BottomNavigationBarItem(
-          icon: Icon(FontAwesomeIcons.magnifyingGlass),
+          icon: Icon(FontAwesomeIcons.magnifyingGlass.data),
           label: 'Find Recipes',
         ),
       ],

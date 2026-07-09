@@ -70,7 +70,7 @@ class ListsService {
 
     // send HTTP post with list data in body
     var response = await http.post(
-      Uri.parse('$_url/'),
+      Uri.parse(_url),
       headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ class ListsService {
 
     // send HTTP put with list in body
     var response = await http.put(
-      Uri.parse('$_url/'),
+      Uri.parse(_url),
       headers: {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer $token',
@@ -175,7 +175,7 @@ class ListsService {
       // send HTTP post with search data
       response = await http.post(
         Uri.parse(
-          '$apiUrl/items/search/',
+          '$apiUrl/items/search',
         ),
         headers: {
           'Content-Type': 'application/json',

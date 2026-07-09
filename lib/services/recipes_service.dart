@@ -107,7 +107,7 @@ class RecipesService {
 
     // send request to get all categories
     var response = await http.get(
-      Uri.parse('$_url/categories/'),
+      Uri.parse('$_url/categories'),
       headers: {
         'Authorization': 'Bearer $token',
       },
@@ -163,7 +163,7 @@ class RecipesService {
 
     // send post request to search with search data
     var response = await http.post(
-      Uri.parse('$_url/search/'),
+      Uri.parse('$_url/search'),
       headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',
@@ -195,7 +195,7 @@ class RecipesService {
     // send post request with recipe data
     var response = await http.post(
       Uri.parse(
-        '$_url/',
+        _url,
       ),
       headers: {
         'Authorization': 'Bearer $token',
@@ -243,7 +243,7 @@ class RecipesService {
     String token = await userService.getTokenIfSet();
     // send request with recipe data
     var response = await http.put(
-      Uri.parse('$_url/'),
+      Uri.parse(_url),
       headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',
@@ -267,7 +267,7 @@ class RecipesService {
     String token = await userService.getTokenIfSet();
     // send post request with item data
     var response = await http.post(
-      Uri.parse('$_url/items/'),
+      Uri.parse('$_url/items'),
       headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',
@@ -313,7 +313,7 @@ class RecipesService {
     String token = await userService.getTokenIfSet();
     // send put request with item data
     var response = await http.put(
-      Uri.parse('$_url/items/'),
+      Uri.parse('$_url/items'),
       headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',
@@ -337,7 +337,7 @@ class RecipesService {
     String token = await userService.getTokenIfSet();
     // send post request with step data
     var response = await http.post(
-      Uri.parse('$_url/steps/'),
+      Uri.parse('$_url/steps'),
       headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',
@@ -361,7 +361,7 @@ class RecipesService {
     String token = await userService.getTokenIfSet();
     // send put request with step data
     var response = await http.put(
-      Uri.parse('$_url/steps/'),
+      Uri.parse('$_url/steps'),
       headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',

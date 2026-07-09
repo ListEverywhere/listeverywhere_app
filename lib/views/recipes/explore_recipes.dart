@@ -40,7 +40,7 @@ class ExploreRecipes extends StatelessWidget {
                     },
                     color: const Color(0xFFFED43F),
                     fontColor: Colors.black,
-                    cardIcon: FontAwesomeIcons.layerGroup,
+                    cardIcon: FontAwesomeIcons.layerGroup.data,
                   ),
                   ExploreCard(
                     cardText: 'Search Recipes',
@@ -49,7 +49,7 @@ class ExploreRecipes extends StatelessWidget {
                     },
                     color: const Color(0xFF2BB8B3),
                     fontColor: Colors.white,
-                    cardIcon: FontAwesomeIcons.magnifyingGlass,
+                    cardIcon: FontAwesomeIcons.magnifyingGlass.data,
                   ),
                   ExploreCard(
                     cardText: 'Match List to Recipe',
@@ -58,7 +58,7 @@ class ExploreRecipes extends StatelessWidget {
                     },
                     color: const Color(0xFFE151AF),
                     fontColor: Colors.white,
-                    cardIcon: FontAwesomeIcons.listCheck,
+                    cardIcon: FontAwesomeIcons.listCheck.data,
                   ),
                 ],
               ),

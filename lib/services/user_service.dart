@@ -24,7 +24,7 @@ class UserService {
     // send HTTP post request to create user
     var response = await http
         .post(
-          Uri.parse('$_url/'),
+          Uri.parse(_url),
           headers: {'Content-Type': 'application/json'},
           body: userJson,
         )
@@ -55,7 +55,7 @@ class UserService {
     // send HTTP post with user credentials
     var response = await http
         .post(
-          Uri.parse('$_url/login/'),
+          Uri.parse('$_url/login'),
           headers: {'Content-Type': 'application/json'},
           body: loginData,
         )
@@ -117,7 +117,7 @@ class UserService {
     try {
       // send HTTP get to get user data
       response = await http.get(
-        Uri.parse('$_url/user/'),
+        Uri.parse('$_url/user'),
         headers: {'Authorization': 'Bearer $token'},
       );
     } catch (e) {
